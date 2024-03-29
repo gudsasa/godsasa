@@ -100,3 +100,175 @@
 // console.log(caclculateAverage(5, 10, 15, "Hello"));
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Оголошена змінна releaseDates
+// Значення змінної releaseDates - це масив [2016, 1967, 2008, 1984, 1973, 2012, 1997]
+// Оголошена змінна ascendingReleaseDates
+// Значення змінної ascendingReleaseDates - це масив [1967, 1973, 1984, 1997, 2008, 2012, 2016]
+// Оголошена змінна descendingReleaseDates
+// Значення змінної descendingReleaseDates - це масив[2016, 2012, 2008, 1997, 1984, 1973, 1967]
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = releaseDates.toSorted((a, b) => a - b);
+
+// const descendingReleaseDates = releaseDates.toSorted((a, b) => b - a);
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Оголошена змінна authors
+// Значення змінної authors - це масив ["Tanith Lee", "Bernard Cornwell", "Robert Sheckley", "Fyodor Dostoevsky", "Howard Lovecraft"]
+// Оголошена змінна authorsInAlphabetOrder
+// Значення змінної authorsInAlphabetOrder - це масив ["Bernard Cornwell", "Fyodor Dostoevsky", "Howard Lovecraft", "Robert Sheckley", "Tanith Lee"]
+// Оголошена змінна authorsInReversedOrder
+// Значення змінної authorsInReversedOrder - це масив ["Tanith Lee", "Robert Sheckley", "Howard Lovecraft", "Fyodor Dostoevsky", "Bernard Cornwell"]
+// Використаний метод toSorted()
+
+// const authors = ["Tanith Lee", "Bernard Cornwell", "Robert Sheckley", "Fyodor Dostoevsky", "Howard Lovecraft"];
+// const authorsInAlphabetOrder = authors.toSorted((a, b) => a.localeCompare(b));
+// const authorsInReversedOrder = authors.toSorted((a, b) => b.localeCompare(a));
+// console.log(authorsInAlphabetOrder);
+// console.log(authorsInReversedOrder);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const students = [
+//     { name: "Mango", score: 83 },
+//     { name: "Poly", score: 59 },
+//     { name: "Ajax", score: 37 },
+//     { name: "Kiwi", score: 94 },
+// ];
+
+// const inAscendingScoreOrder = students.toSorted((firstStudent, secondStudent) => firstStudent.score - secondStudent.score);
+
+// const inDescendingScoreOrder = students.toSorted((firstStudent, secondStudent) => secondStudent.score - firstStudent.score);
+
+// const inAlphabeticalOrder = students.toSorted((firstStudent, secondStudent) => firstStudent.name.localeCompare(secondStudent.name));
+
+// console.log(inAscendingScoreOrder);
+// console.log(inDescendingScoreOrder);
+// console.log(inAlphabeticalOrder);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Доповни код таким чином, щоб:
+
+// У змінній sortedByAuthorName вийшов масив книг, відсортований за ім'ям автора в алфавітному порядку.
+// У змінній sortedByReversedAuthorName вийшов масив книг, відсортований за ім'ям автора у зворотному алфавітному порядку.
+// У змінній sortedByAscendingRating вийшов масив книг, відсортований за зростанням рейтингу.
+// У змінній sortedByDescentingRating вийшов масив книг, відсортований за спаданням рейтингу.
+
+// const books = [
+//     {
+//         title: "The Last Kingdom",
+//         author: "Bernard Cornwell",
+//         rating: 8.38,
+//     },
+//     {
+//         title: "Beside Still Waters",
+//         author: "Robert Sheckley",
+//         rating: 8.51,
+//     },
+//     {
+//         title: "The Dream of a Ridiculous Man",
+//         author: "Fyodor Dostoevsky",
+//         rating: 7.75,
+//     },
+//     {
+//         title: "Redder Than Blood",
+//         author: "Tanith Lee",
+//         rating: 7.94,
+//     },
+//     {
+//         title: "Enemy of God",
+//         author: "Bernard Cornwell",
+//         rating: 8.67,
+//     },
+// ];
+
+// // Sort books by author name in alphabetical order
+// const sortedByAuthorName = books.toSorted((a, b) => a.author.localeCompare(b.author));
+
+// // Sort books by author name in reverse alphabetical order
+// const sortedByReversedAuthorName = books.toSorted((a, b) => b.author.localeCompare(a.author));
+
+// // Sort books by rating in ascending order
+// const sortedByAscendingRating = books.toSorted((a, b) => a.rating - b.rating);
+
+// // Sort books by rating in descending order
+// const sortedByDescentingRating = books.toSorted((a, b) => b.rating - a.rating);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Оголошена змінна books
+// Значення змінної books - це вихідний масив об'єктів
+// Оголошена змінна MIN_BOOK_RATING
+// Значення змінної MIN_BOOK_RATING - це число 8
+// Оголошена змінна names
+// Значення змінної names - це масив ["Bernard Cornwell", "Howard Lovecraft", "Robert Sheckley"]
+// Змінна names повинна формуватися за допомогою ланцюжка методів filter, map, toSorted, при цьому інші змінні не повинні оголошуватись
+
+// const books = [
+//     {
+//         title: "The Last Kingdom",
+//         author: "Bernard Cornwell",
+//         rating: 8.38,
+//     },
+//     {
+//         title: "Beside Still Waters",
+//         author: "Robert Sheckley",
+//         rating: 8.51,
+//     },
+//     {
+//         title: "The Dream of a Ridiculous Man",
+//         author: "Fyodor Dostoevsky",
+//         rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//     {
+//         title: "The Dreams in the Witch House",
+//         author: "Howard Lovecraft",
+//         rating: 8.67,
+//     },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books;
+// const books = [
+//     {
+//         title: "The Last Kingdom",
+//         author: "Bernard Cornwell",
+//         rating: 8.38,
+//     },
+//     {
+//         title: "Beside Still Waters",
+//         author: "Robert Sheckley",
+//         rating: 8.51,
+//     },
+//     {
+//         title: "The Dream of a Ridiculous Man",
+//         author: "Fyodor Dostoevsky",
+//         rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//     {
+//         title: "The Dreams in the Witch House",
+//         author: "Howard Lovecraft",
+//         rating: 8.67,
+//     },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books
+//     .filter((book) => book.rating > MIN_BOOK_RATING)
+//     .map((book) => book.author)
+//     .toSorted((a, b) => a.localeCompare(b));
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
