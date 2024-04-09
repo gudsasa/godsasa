@@ -157,7 +157,77 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// function calculateTotal(number) {
+//     let total = 0;
+//     for (let i = 1; i <= number; i++) total += i;
+//     return total;
+// }
+
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(0));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
+// console.log(calculateTotal());
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// for (let i = 0; i <= 20; i += 5) {
+//     console.log(i);
+// }
+
+// for (let i = 20; i >= 0; i -= 5) {
+//     console.log(i);
+// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Функція calculateEvenTotal(number) приймає ціле число(параметр number).
+// Доповни код функції так, щоб вона повертала суму всіх парних цілих чисел від одиниці до цього числа включно.
+// Парні числа — це ті, що можна поділити на 2 без остачі(як це зробити розглядалося у темі Арифметичні операції у модулі 1).
+//  Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.
+
+// function calculateEvenTotal(number) {
+//     let total = 0;
+//     for (let i = 1; i <= number; i++)
+//         if (i % 2 === 0) {
+//             total += i;
+//         }
+//     return total;
+// }
+
+// console.log(calculateEvenTotal(1));
+// console.log(calculateEvenTotal(3));
+// console.log(calculateEvenTotal(7));
+// console.log(calculateEvenTotal(18));
+// console.log(calculateEvenTotal(27));
+// console.log(calculateEvenTotal());
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Функція findNumber(start, end, divisor) приймає три параметра, які є цілими числами.
+
+// Доповни код функції таким чином, щоб вона:
+
+// повертала перше число у діапазоні від start до end включно, яке ділиться на divisor без остачі
+// не використовуй оператор break
+
+// function findNumber(start, end, divisor) {
+//     let number;
+//     for (let i = start; i <= end; i++) {
+//         if (i % divisor == 0) {
+//             number = i;
+//             return i;
+//         }
+//     }
+// }
+
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+// console.log(findNumber(6, 9, 4));
+// console.log(findNumber(16, 35, 7));
+// console.log(findNumber());
+
+//++++++++++++++++++++++++++++++++++++++++++++
 
 //+++++++++++++++++++++++++             1         +++++++++++++++++++++++++
 
@@ -253,4 +323,58 @@
 // console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++
+
+//+++++++++++++++++++     4     +++++++++++++++++++++++
+
+// Оголоси функцію getShippingCost(country), яка повинна перевіряти можливість доставки товару в країну користувача
+// (параметр country) і повертати повідомлення про результат.Обов'язково використовуй інструкцію switch.
+
+// Формат рядка, що повертається "Shipping to <country> will cost <price> credits",
+// де замість < country > і < price > необхідно підставити відповідні значення.
+
+// Список країн і вартість доставки:
+
+// China — 100 кредитів
+// Chile — 250 кредитів
+// Australia — 170 кредитів
+// Jamaica — 120 кредитів
+
+// Зі списку видно, що доставка можлива не скрізь.Якщо зазначена країна відсутня у списку,
+// то функція повинна повернути рядок "Sorry, there is no delivery to your country".
+
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи.
+// У консоль будуть виведені результати її роботи.
+
+// function getShippingCost(country) {
+//     let price;
+//     switch (country) {
+//         case `China`:
+//             price = 100;
+//             return `Shipping to ${country} will cost ${price} credits`;
+//             break;
+//         case `Chile`:
+//             price = 250;
+//             return `Shipping to ${country} will cost ${price} credits`;
+//             break;
+//         case `Australia`:
+//             price = 170;
+//             return `Shipping to ${country} will cost ${price} credits`;
+//             break;
+//         case `Jamaica`:
+//             price = 120;
+//             return `Shipping to ${country} will cost ${price} credits`;
+//             break;
+//         default:
+//             return `Sorry, there is no delivery to your country`;
+//     }
+// }
+
+// console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"
+// console.log(getShippingCost("Germany")); // "Sorry, there is no delivery to your country"
+// console.log(getShippingCost("China")); // "Shipping to China will cost 100 credits"
+// console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credits"
+// console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
+// console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
