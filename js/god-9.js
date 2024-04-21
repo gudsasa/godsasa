@@ -33,3 +33,7 @@
 // });
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// npm config set init-author-name "gudsasa"
+// npm config set init-author-email "gudsasa@gmail.com"
+// cd C:/шлях/до/папки/projects   //для Windows
+// cd C:/Users/Admin/Documents/GitHub/projects
